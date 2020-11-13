@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,7 +13,7 @@
         tools:context=".MainActivity">
 
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="match_parent"
             android:scaleType="fitXY"
             android:src="@drawable/welcomeimg" />
@@ -21,7 +22,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:fontFamily="sans-serif"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="normal"
             android:text="Welcome to ChotaNaukri!"
             android:textColor="@android:color/background_dark"
             android:textSize="30sp" />
@@ -30,11 +32,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="220dp"
             android:fontFamily="sans-serif-condensed-medium"
-            android:paddingLeft="0dp"
-            android:paddingBottom="220dp"
             android:text="Our Mission"
-            android:textColor="@android:color/white"
+            android:textColor="#ED1F1B1B"
             android:textSize="25sp" />
 
         <TextView
@@ -54,12 +56,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="90dp"
             android:layout_marginRight="100dp"
             android:layout_marginBottom="100dp"
-            android:background="@android:color/darker_gray"
-            android:textColor="@android:color/black"
-            android:text=" Search Internships " />
+            android:text="Register"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="100dp"
+            android:text="LOGIN" />
 
 
     </RelativeLayout>
@@ -67,7 +78,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight=".5"
+        android:layout_weight="0.5"
         tools:context=".MainActivity">
 
         <ImageView
@@ -79,33 +90,101 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
+            android:layout_marginBottom="0dp"
             android:orientation="horizontal"
             android:padding="0dp"
             android:weightSum="4">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="108dp"
+                android:layout_height="132dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:background="@android:color/black"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="CN Trainings"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Technical"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Non-Technical"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Marketing"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Student Learning Partners"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="107dp"
+                android:layout_height="114dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginRight="5dp"
                 android:layout_weight="2"
                 android:background="@android:color/black"
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:fontFamily="sans-serif-light"
-                    android:text="Register"
+                    android:text="Search Internships"
                     android:textColor="@android:color/white"
                     android:textSize="10sp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:fontFamily="sans-serif-light"
@@ -114,27 +193,21 @@
                     android:textSize="10sp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:fontFamily="sans-serif"
                     android:text="Mentor Support"
                     android:textColor="@android:color/white"
-                    android:textSize="10sp" />
+                    android:textSize="10sp"
+                    app:fontFamily="sans-serif-light" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:fontFamily="sans-serif-light"
-                    android:text="ChotaNaukri Trainings"
-                    android:textColor="@android:color/white"
-                    android:textSize="10sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="131dp"
+                android:layout_margin="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
@@ -144,61 +217,63 @@
                 android:padding="5dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:fontFamily="sans-serif-light"
                     android:text="Team"
                     android:textColor="@android:color/white"
-                    android:textSize="12sp" />
+                    android:textSize="10sp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_margin="5dp"
                     android:fontFamily="sans-serif-light"
                     android:text="FAQs"
                     android:textColor="@android:color/white"
-                    android:textSize="15sp" />
+                    android:textSize="10sp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_margin="5dp"
                     android:fontFamily="sans-serif-light"
                     android:text="Privacy"
                     android:textColor="@android:color/white"
-                    android:textSize="12sp" />
+                    android:textSize="10sp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_margin="5dp"
                     android:fontFamily="sans-serif-light"
-                    android:text="For Employers"
+                    android:text="Blog"
                     android:textColor="@android:color/white"
-                    android:textSize="12sp" />
+                    android:textSize="10sp" />
+
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_margin="5dp"
                     android:fontFamily="sans-serif-light"
                     android:text="Terms and Conditions"
                     android:textColor="@android:color/white"
-                    android:textSize="12sp" />
+                    android:textSize="10sp" />
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
             android:orientation="horizontal"
             android:padding="5dp"
             android:weightSum="4">
@@ -208,21 +283,25 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="0dp"
+                android:layout_marginBottom="5dp"
                 android:layout_weight="2"
                 android:background="@android:color/white"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="5dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:fontFamily="sans-serif"
                     android:text="Contact Us"
+                    android:textAllCaps="true"
                     android:textColor="@android:color/black"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:fontFamily="sans-serif"
@@ -231,7 +310,7 @@
                     android:textSize="9sp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:fontFamily="sans-serif"
@@ -240,11 +319,11 @@
                     android:textSize="9sp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Help Center:9785456231"
+                    android:fontFamily="sans-serif"
+                    android:text="Help Center:044-256365"
                     android:textColor="@android:color/black"
                     android:textSize="9sp" />
             </LinearLayout>
@@ -260,54 +339,58 @@
                 android:padding="5dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:fontFamily="sans-serif"
                     android:text="Address"
+                    android:textAllCaps="true"
                     android:textColor="@android:color/white"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:fontFamily="sans-serif-light"
-                    android:text=" Scholiverse Educare Pvt.Ltd.,B-610,H1 Zone,Gurgaon,India - 122018"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Scholiverse Educare Pvt.Ltd.,T.Nagar,Chennai,India-600023"
                     android:textColor="@android:color/black"
                     android:textSize="9sp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:layout_marginRight="5dp"
                     android:fontFamily="sans-serif"
                     android:text="Working Hours"
+                    android:textAllCaps="true"
                     android:textColor="@android:color/white"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:layout_marginRight="5dp"
-                    android:fontFamily="sans-serif"
+                    android:fontFamily="sans-serif-condensed-medium"
                     android:text="Monday to Friday, 10:00 AM – 6:00 PM"
                     android:textColor="@android:color/black"
                     android:textSize="8sp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:layout_marginRight="5dp"
-                    android:fontFamily="sans-serif"
+                    android:fontFamily="sans-serif-condensed-medium"
                     android:text="Work from home(Covid-19 Guidelines).Contact Help center"
                     android:textColor="@android:color/black"
-                    android:textSize="8sp" />
+                    android:textSize="8sp"/>
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
